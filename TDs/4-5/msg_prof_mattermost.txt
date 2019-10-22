@@ -1,0 +1,26 @@
+A titre indicatif, voici des hyper-paramètres pour DQN  (optimisation après chaque décision, fonction d'activation=leaky_relu) qui fonctionnent plutôt bien sur mon implémentation : 
+
+  Pour Gridworld  (convergence après environ 2000 episodes sur plan0 avec rewards={0:-0.001,3:1,4:1,5:-1,6:-1}):
+
+      - epsilon=0.1, epsilonDecay=0.9999 (epsilon multiplié par epsilonDecay à chaque passage dans act)
+      - gamma=0.99
+      - batchSize=10, capacity=1000000
+      - ctarget=1000 (fréquence de mise à jour du réseau cible)
+      - layers=[30,30]
+      - lr=0.0001 (learning rate)
+  Pour CartPole (convergence après environ 300 episodes):
+
+      - epsilon=0.01, epsilonDecay=0.99999
+      - gamma=0.999
+      - btachSize=100, capacity=100000
+      - ctarget=100
+      - layers=[200]
+      - lr=0.001
+  Pour LunarLander (convergence après environ 10000 episodes):
+
+      - epsilon=0.1, epsilonDecay=0.99999
+      - gamma=0.99
+      - btachSize=1, capacity=1
+      - ctarget=1000
+      - layers=[200]
+      - lr=0.0001
