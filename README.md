@@ -1,4 +1,4 @@
-# Reinforcement Learning and advanced Deep Learning (RDL)
+# Reinforcement Learning and Advanced Deep Learning (RDL)
 
 [Course website](http://dac.lip6.fr/master/rdl-2019-2020/)
 
