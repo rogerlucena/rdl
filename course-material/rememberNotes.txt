@@ -1,0 +1,29 @@
+Notes:
+
+-- Value Based RL (page 10, cours 3):
+
+- Offline solution:
+If your have all the information about your MDP (R(s, a, s') and P(s'|s, a)) you can just *plan* everything before and find the optimal policy:
+    e.g.: Value iteration and Policy iteration (difference between these two: https://stackoverflow.com/questions/37370015/what-is-the-difference-between-value-iteration-and-policy-iteration)
+        (in general: PI faster than VI - value function normally takes more time to converge)
+
+- Online solution:
+- Model based vs Model free (cours 2 and 3)
+(https://www.quora.com/What-is-the-difference-between-model-based-and-model-free-reinforcement-learning)
+
+In RL problems you do not know your MDP beforehand, you have to, through trial and error, start to understand it.
+(concepts of exploration and exploitation here)
+
+Model based:
+You first build an estimate of your MDP, of your model (P and R functions above). Then, you deduce your policy.
+    e.g.: SARSA
+        (in general: model learning is more difficult than learning the optimal policy directly)
+
+Model free:
+You do not learn the model, only directly Q (to deduce the policy from it) or the policy itself for example.
+    e.g.: actor critic, policy search
+
+Summary:
+"So if you want a way to check if an RL algorithm is model-based or model-free, ask yourself this question: after learning, 
+can the agent make predictions about what the next state and reward will be before it takes each action? If it can, then it’s a 
+model-based RL algorithm. if it cannot, it’s a model-free algorithm."
