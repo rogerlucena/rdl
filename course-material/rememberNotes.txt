@@ -27,3 +27,8 @@ Summary:
 "So if you want a way to check if an RL algorithm is model-based or model-free, ask yourself this question: after learning, 
 can the agent make predictions about what the next state and reward will be before it takes each action? If it can, then it’s a 
 model-based RL algorithm. if it cannot, it’s a model-free algorithm."
+
+
+
+On-policy vs Off-policy?
+SARSA vs Q-Learning
