@@ -7,7 +7,7 @@ gridworld==0.1
 gym==0.14.0
 kiwisolver==1.1.0
 matplotlib==3.1.1
-numpy==1.17.2
+numpy==1.22.0
 Pillow==6.2.0
 pyglet==1.4.4
 pyglet-ffmpeg2==0.1.15
